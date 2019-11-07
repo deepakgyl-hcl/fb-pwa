@@ -2,7 +2,7 @@
   "name": "Unica Insurance - Florida Blue",
   "short_name": "Florida Blue",
   "lang": "en-US",
-  "start_url": "/index.html",
+  "start_url": "https://deepakgyl-hcl.github.io/fb-pwa/",
   "display": "standalone",
   "background_color": "#3498db",
   "orientation": "landscape",
