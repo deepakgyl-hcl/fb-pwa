@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />    
+    <title>Unica Insurance - Florida Blue</title>
+
+    <meta name="description" content="Unica Insurance - Florida Blue">
+    <meta name="author" content="Unica Insurance - Florida Blue">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme_blue.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="black"/>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    
+</head>
+
+<body>
+
+    <!--begin container -->
+    <div id="container">
+
+        <!--begin header_wrapper -->
+        <header id="header_wrapper">
+
+            <!--begin header -->
+            <div id="header" class="clearfix">
+
+                <!--begin row -->
+                <div class="row">
+
+                    <!--begin logo -->
+                    <a href="index.html" id="logo"><img class="logoImg" src="images/logo.png" /></a>
+                    <!--end logo -->
+
+                    <!--begin nav -->
+                    <nav id="navigation" role="navigation">
+                        <ul id="nav">
+                            <li class="with-subMenu">
+                                <a href="#" onclick="showSubMenu()">Find a Plan <span class="icon icon-angle-right"></span></a>
+                                <ul class="subMenu-mobile hidden">
+                                    <li><span class="icon icon-briefcase-case-two"></span><span class="text">Dental Plans</span></li>
+                                    <li><span class="icon icon-user"></span><span class="text">USAble Life Hospital Plans</span></li>
+                                    <li><span class="icon icon-user"></span><span class="text">International Travel Health Plans</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Find a Doctor</a>
+                            </li>
+                            <li>
+                                <a href="#">Find a Flora Blue Center</a>
+                            <li class="last">
+                                <input type="submit" value="REGISTER NOW" id="submit-button-header" onclick="window.location.href='register.html'">
+                            </li>
+
+                        </ul>
+                        <div class="subMenu row hidden">
+                            <div class="section_box">
+                                <div class="twelvecol">
+                                    <div class="fourcol menu-item">
+                                        <span class="icon icon-briefcase-case-two"></span><span class="text">Dental Plans</span>
+                                    </div>
+                                    <div class="fourcol last menu-item">
+                                        <span class="icon icon-user"></span><span class="text">USAble Life Hospital Plans</span>
+                                    </div>
+                                    <div class="fourcol last menu-item">
+                                        <span class="icon icon-user"></span><span class="text">International Travel Health Plans</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!--end nav -->
+
+                </div>
+                <!--end row -->
+
+            </div>
+            <!--end header -->
+
+        </header>
+        <!--end header_wrapper -->
+
+        <!--begin contact -->
+        <section id="contact">
+
+            <!--begin call_to_action_dark_wrapper -->
+            <div class="call_to_action_white_wrapper">
+
+                <!--begin call_to_action_dark -->
+                <div class="call_to_action_white">
+                    <h3 class="">Enter your details below</h3>
+                    <div class="separator_wrapper">
+                        <div class="separator_first_circle">
+                            <div class="separator_second_circle_grey">
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="">Get started quickly by filling in the fields below</h4>
+                </div>
+                <!--end call_to_action_dark -->
+
+            </div>
+            <!--end call_to_action_dark_wrapper -->
+
+            <!--begin section_wrapper -->
+            <div class="section_wrapper">
+
+                <!--begin section_box -->
+                <div class="section_box align_center">
+
+                    <!--begin row -->
+                    <div class="row">
+
+                        <!--begin success message -->
+                        <p class="contact_success_box" style="display:none;">We received your message and you'll hear from us soon. Thank You!</p>
+                        <!--end success message -->
+
+                        <!--begin contact form -->
+                        <form id="contact-form" class="contact" autocomplete="on">
+                            <input class="contact-input" type="text" required="" name="contact_names" placeholder="Member Number" />
+                            <input class="contact-input contact_fname" type="text" required="" name="contact_fname" placeholder="First Name*" />
+                            <input class="contact-input contact_lname" type="text" required="" name="contact_lname" placeholder="Last Name*" />
+                            <input class="contact-input contact_date" type="text" required="" name="contact_dob" placeholder="Date of Birth (MM/DD/YYYY)" />
+                            <input class="contact-input " type="email" required="" name="contact_email" placeholder="Email Adress*" />
+                            <input class="contact-input " type="text" required="" name="contact_zip" placeholder="Zip Code" />
+                            <input type="submit" value="Register" id="submit-button" class="contact-submit" />
+                        </form>
+                        <!--end contact form -->
+
+                    </div>
+                    <!--end row -->
+
+                </div>
+                <!--end section_box -->
+
+            </div>
+            <!--end section_wrapper -->
+
+        </section>
+        <!--end contact -->
+
+    </div>
+    <!--! end of #container -->
+
+
+
+    
+    <!-- scripts concatenated and minified via ant build script-->
+    <script src="js/modernizr-2.6.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    
+    <!-- begin jquery.sticky script-->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+		<script>
+        $(window).load(function(){
+          $("#header_wrapper").sticky({ topSpacing: 0 });
+        });
+    </script>
+    <!-- end jquery.sticky script-->
+  
+    <!-- begin menu scrollTo script-->
+    
+	<!-- end menu scrollTo script-->
+    
+    <!-- begin menu color script-->
+    <script src="js/jquery.nav.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('#nav').onePageNav({
+		filter: ':not(.external)',
+		scrollThreshold: 0.25
+		});
+
+
+        $("#submit-button").on('click', function() {
+            var birthDate = new Date($('.contact_date').val()),
+                today = new Date(),
+                age = today.getFullYear() - birthDate.getFullYear(),
+                m = today.getMonth() - birthDate.getMonth();
+
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+                window.location.href="index.html?fname=" + $(".contact_fname").val()+"&age="+age;
+        });
+	});
+	</script>
+    <!-- end menu color script-->
+    
+    <!--begin shrink header script -->
+    <script>
+	$(function(){
+	 var shrinkHeader = 70;
+	  $(window).scroll(function() {
+		var scroll = getCurrentScroll();
+		  if ( scroll >= shrinkHeader ) {
+			   $('#header_wrapper').addClass('shrink');
+			}
+			else {
+				$('#header_wrapper').removeClass('shrink');
+			}
+	  });
+	function getCurrentScroll() {
+		return window.pageYOffset;
+		}
+	});
+	</script>
+    <!--end shrink header script -->
+    
+    
+  	
+        
+    <script type="text/javascript">
+        function showSubMenu() {
+            $("#navigation #nav .with-subMenu .icon").toggleClass("icon-angle-right icon-angle-down");
+            $("#header .subMenu").toggleClass("hidden");
+        }
+        // Running the code when the document is ready
+       
+    </script>
+    <!-- end layerslider script-->
+
+</body>
+</html>

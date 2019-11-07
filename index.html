@@ -1,0 +1,274 @@
+<!doctype html>
+ 
+<html lang="en"> 
+<head>   
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />    
+    <title>Unica Insurance - Florida Blue</title>
+
+    <meta name="description" content="Unica Insurance - Florida Blue">
+    <meta name="author" content="Unica Insurance - Florida Blue">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme_blue.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="black"/>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    
+</head>
+<body class="fullscreen">
+    
+
+
+    <!--begin container -->
+    <div id="container">
+
+        <!--begin header_wrapper -->
+        <header id="header_wrapper">
+
+            <!--begin header -->
+            <div id="header" class="clearfix">
+
+                <!--begin row -->
+                <div class="row">
+
+                    <!--begin logo -->
+                    <a href="index.html" id="logo"><img class="logoImg" src="images/logo.png" /></a>
+                    <!--end logo -->
+
+                    <!--begin nav -->
+                    <nav id="navigation" role="navigation">
+                        <ul id="nav">
+                            <li class="with-subMenu">
+                                <a href="#" onclick="showSubMenu()">Find a Plan <span class="icon icon-angle-right"></span></a>
+                                <ul class="subMenu-mobile hidden">
+                                    <li><span class="icon icon-briefcase-case-two "></span><span class="text menu-item-1">Dental Plans</span></li>
+                                    <li><span class="icon icon-plus"></span><span class="text menu-item-2">USAble Life Hospital Plans</span></li>
+                                    <li><span class="icon icon-user"></span><span class="text menu-item-3">International Travel Health Plans</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Find a Doctor</a>
+                            </li>
+                            <li>
+                                <a href="#">Find a Flora Blue Center</a>
+                            <li class="last">
+                                <input type="submit" value="REGISTER NOW" id="submit-button-header" onclick="window.location.href='register.html'">
+                            </li>
+
+                        </ul>
+                        <div class="subMenu row hidden">
+                            <div class="section_box">
+                                <div class="twelvecol">
+                                    <div class="fourcol menu-item">
+                                        <span class="icon icon-briefcase-case-two"></span><span class="text menu-item-1">Dental Plans</span>
+                                    </div>
+                                    <div class="fourcol menu-item">
+                                        <span class="icon icon-plus"></span><span class="text menu-item-2">USAble Life Hospital Plans</span>
+                                    </div>
+                                    <div class="fourcol last menu-item">
+                                        <span class="icon icon-user"></span><span class="text menu-item-3">International Travel Health Plans</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!--end nav -->
+
+                </div>
+                <!--end row -->
+
+            </div>
+            <!--end header -->
+
+        </header>
+        <!--end header_wrapper -->
+
+        <!--begin home_wrapper -->
+        <section id="home_wrapper">
+
+            <!--begin home_box -->
+            <div class="home_box">
+            </div>
+            <!--end home_box -->
+
+        </section>
+        <!--end home_wrapper -->
+
+
+        <!--begin services -->
+        <section id="services">
+
+            <!--begin services_item -->
+            <div class="services_item services_item_1">
+
+                <!--begin services_box -->
+                <div class="services_box">
+                    <p>Virtual Health</p>
+                    <p>Your health care shouldn't be limited by your location. With virtual health care, you have access to providers 24/7, and you can access care that works for your schedule.</p>
+                    <!--<a href="" class="services_button">Read More</a>-->
+
+                </div>
+                <!--end services_box -->
+
+            </div>
+            <!--end services_item -->
+
+            <!--begin services_item -->
+            <div class="services_item services_item_2">
+
+                <!--begin services_box -->
+                <div class="services_box">
+                    <p>Quality Care Network</p>
+                    <p>With more of Florida's top providers to choose from, you have access to the experts you need to keep you in good health.</p>
+                    <!--<a href="" class="services_button">Read More</a>-->
+
+                </div>
+                <!--end services_box -->
+
+            </div>
+            <!--end services_item -->
+
+            <!--begin services_item -->
+            <div class="services_item services_item_3">
+
+                <!--begin services_box -->
+                <div class="services_box">
+                    <p>Florida Blue Centers</p>
+                    <p>We're here in your community. Talk with a nurse, learn about healthy living or speak with a rep about your plan in person.</p>
+                    <!--<a href="" class="services_button">Read More</a>-->
+
+                </div>
+                <!--end services_box -->
+
+            </div>
+            <!--end services_item -->
+
+        </section>
+        <!-- end section_wrapper -->
+
+    </div>
+    <!--! end of #container -->
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/modernizr-2.6.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.scrollTo-min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script>
+        $(window).load(function(){
+            $("#header_wrapper").sticky({ topSpacing: 0 });
+        });
+    </script>
+    <script type="text/javascript">
+        (function($){
+            $(document).ready(function() {	
+                $("#nav li a, a.scrool").click(function(e){
+                    var full_url = this.href;
+                    var parts = full_url.split("#");
+                    var trgt = parts[1];
+                    var target_offset = $("#"+trgt).offset();
+                    var target_top = target_offset.top;
+                    
+                    $('html,body').animate({scrollTop:target_top -69}, 1000);
+                        return false; 
+                });         
+            });
+        })(jQuery);
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#nav').onePageNav({
+            filter: ':not(.external)',
+            scrollThreshold: 0.25
+            });
+    
+    
+            var getUrlParameter = function getUrlParameter(sParam) {
+                var sPageURL = window.location.search.substring(1),
+                    sURLVariables = sPageURL.split('&'),
+                    sParameterName,
+                    i;
+    
+                for (i = 0; i < sURLVariables.length; i++) {
+                    sParameterName = sURLVariables[i].split('=');
+    
+                    if (sParameterName[0] === sParam) {
+                        return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                    }
+                }
+            };
+    
+            if(getUrlParameter("fname") !== undefined) {
+                if(parseInt(getUrlParameter("age")) <= 50) {
+                    var url = 'https://res.cloudinary.com/hclsoftware/image/upload/v1571824415/young_3_shude8.jpg';
+                    $(".menu-item-1").text("Dental Plans 1");
+                    $(".menu-item-2").text("USAble Life Accident Plans");
+                    $(".menu-item-3").text("USAble Life Critical Illness Plans");
+                    $(".services_box p").html("<div style='visibility:hidden'>I</div>");
+                    $(".services_item_3").css("background","url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,c_scale,co_rgb:fff,fl_relative,g_center,l_text:lato_50_style_bold_align_left:Florida%20Blue%20Centers%0A%0A%0AWe%20are%20here%20in%20your%20community.%20Talk%20with%0Aa%20nurse%20or%20learn%20about%20healthy%20living%20or%20speak%20with%20a%0Arep%20about%20your%20plan%20in%20person.,w_0.8,y_20,x_10/v1571823985/young_2_ypudbi.jpg)");
+                    $(".services_item_2").css("background","url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,c_scale,co_rgb:000,fl_relative,g_center,l_text:lato_50_style_bold_align_center:Florida%20Blue%20Silver%0APlan%20123%20Claim,w_0.25,y_-125,x_-360,a_-29/v1571816907/claim_form_ka2glg.jpg)");
+                    $(".services_item_1").css("background","url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,c_scale,co_rgb:fff,fl_relative,g_center,l_text:lato_50_style_bold_align_left:Virtual%20Health%0A%0A%0AYour%20health%20care%20should%20not%20be%20limited%20by%20your%0Alocation.With%20virtual%20health%20care%20you%20have%0Aaccess%20to%20providers%2024%20by%207%20and%20you%20can%20access%0Acare%20that%20works%20for%20your%20schedule.,w_0.8,y_20,x_10/v1571823755/young_1_smlcqg.jpg)");
+                } else {
+                    var url = 'https://res.cloudinary.com/hclsoftware/image/upload/v1571819069/happy-mature-couple_jul021.jpg';
+                    $(".menu-item-1").text("Dental Plans 1");
+                    $(".menu-item-2").text("USAble Travel Health Plans");
+                    $(".menu-item-3").text("USAble Life Hospital Plans");
+                    $(".services_box p").html("<div style='visibility:hidden'>I</div>");
+                    $(".services_item_3").css("background","url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,c_scale,co_rgb:fff,fl_relative,g_center,l_text:lato_50_style_bold_align_left:Florida%20Blue%20Centers%0A%0A%0AWe%20are%20here%20in%20your%20community.%20Talk%20with%0Aa%20nurse%20or%20learn%20about%20healthy%20living%20or%20speak%20with%20a%0Arep%20about%20your%20plan%20in%20person.,w_0.8,y_20,x_10/v1571817136/senior_1_h51lga.jpg)");
+                    $(".services_item_2").css("background","url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,c_scale,co_rgb:000,fl_relative,g_center,l_text:lato_50_style_bold_align_center:Florida%20Blue%20Silver%0APlan%20123%20Claim,w_0.25,y_-125,x_-360,a_-29/v1571816907/claim_form_ka2glg.jpg)");
+                    $(".services_item_1").css("background","url(https://res.cloudinary.com/hclsoftware/image/upload/w_600,c_scale,co_rgb:fff,fl_relative,g_center,l_text:lato_50_style_bold_align_left:Virtual%20Health%0A%0A%0AYour%20health%20care%20should%20not%20be%20limited%20by%20your%0Alocation.With%20virtual%20health%20care%20you%20have%0Aaccess%20to%20providers%2024%20by%207%20and%20you%20can%20access%0Acare%20that%20works%20for%20your%20schedule.,w_0.8,y_20,x_10/v1571807454/Resize-senior-couple-daily-lifestyle-happiness-PQRJ4X6_rubdku.jpg)");
+                }
+                $("#home_wrapper").css("background","url("+url+")");
+                var mq = window.matchMedia( "(max-width: 767px)" );
+                if (mq.matches) {
+                    
+                } else {
+                    $(".services_box").css("padding","155px 55px 155px 55px");
+                }
+                
+            }
+        });
+    </script>
+    <script>
+        $(function(){
+        var shrinkHeader = 70;
+        $(window).scroll(function() {
+            var scroll = getCurrentScroll();
+            if ( scroll >= shrinkHeader ) {
+                $('#header_wrapper').addClass('shrink');
+                }
+                else {
+                    $('#header_wrapper').removeClass('shrink');
+                }
+        });
+        function getCurrentScroll() {
+            return window.pageYOffset;
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        function showSubMenu() {
+            $("#navigation #nav .with-subMenu .icon").toggleClass("icon-angle-right icon-angle-down");
+            $("#header .subMenu").toggleClass("hidden");
+        }
+    </script>
+</body>
+</html>
