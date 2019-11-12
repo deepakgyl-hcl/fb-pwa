@@ -262,7 +262,9 @@
                 modal2.style.display = "none";
                 return false;
             }  
+            modal.style.display = "none";
 
+            window.location.href="index.html?fname=" + $(".contact_fname").val()+"&age="+age;
             
         })
 
