@@ -106,8 +106,8 @@
                 <img style="height:200px;width:200px; margin-top:-25px;" src="images/popup_envolope.png"/>
                 <h5 style="color:#3498db;"><b>Download the 2020 Healthcare Family Coverage guide and find the top 5 things to know before choosing a Health Insurance</b></h5>
                     <div>
-                        <input class="contact-input " type="text" required="" name="contact_fname" placeholder="Name*" />
-                        <input class="contact-input " type="email" required="" name="contact_email" placeholder="Email Adress*" />
+                        <input class="contact-input contact_fname" type="text" required="" name="contact_fname" placeholder="Name*" />
+                        <input class="contact-input contact_email" type="email" required="" name="contact_email" placeholder="Email Adress*" />
                         <input class="product_name" type="hidden" name="product_name" value=""/>
                     </div>
                     <input type="submit" value="Submit" id="submit-button" class="contact-submit" style="margin-top:30px;"/>
@@ -126,6 +126,7 @@
                         <div>
                             <input class="contact-input " type="text" required="" name="contact_fname" placeholder="Name*" />
                             <input class="contact-input " type="email" required="" name="contact_email" placeholder="Email Adress*" />
+                            <input class="contact-input " type="phone" required="" name="contact_phone" placeholder="Phone Number*" />
                             <input class="contact-input contact_date" type="text" required="" name="contact_dob" placeholder="Date of Birth (MM/DD/YYYY)" />
                             <input class="product_name" type="hidden" name="product_name" value=""/>
                         </div>
@@ -203,7 +204,12 @@
         }
 
         setTimeout( function() {
-            modal.style.display = "block";
+            if(modal2.style.display == "block") {
+                modal.style.display = "none";
+            } else {
+                modal.style.display = "block";
+            }
+            
         }, 3000);
 
         $("#subscribe-button").on('click', function() {
@@ -223,18 +229,20 @@
             }
         }
 
-        $("#newsletter-form").submit(function() {
+        $("#newsletter-form").submit(function(e) {
+            e.preventDefault();
             var formdata = $(this).serialize();
             $.ajax({
-			    type: "POST",
-			    url: "https://mailchimpapi.000webhostapp.com/index.php",
-			    data: formdata
-            });
-            modal.style.display = "none";
-			return false;
+                type: "POST",
+                url : "http://4fe0f604.ngrok.io/sendEmail",
+                data : formdata,
+            }).success(function(data){
+                modal.style.display = "none";
+            })
         });
 
-        $("#subscribe-form").submit(function() {
+        $("#subscribe-form").submit(function(e) {
+            e.preventDefault();
             var birthDate = new Date($('.contact_date').val()),
                 today = new Date(),
                 age = today.getFullYear() - birthDate.getFullYear(),
@@ -247,11 +255,11 @@
                 var formdata = $(this).serialize();
                 $.ajax({
                     type: "POST",
-                    url: "https://mailchimpapi.000webhostapp.com/indexYoung.php",
+                    url: "http://4fe0f604.ngrok.io/sendWhatsapp",
                     data: formdata
+                }).success(function(data){
+                    modal2.style.display = "none";
                 });
-                modal2.style.display = "none";
-                return false;
             }  else {
                 var formdata = $(this).serialize();
                 $.ajax({
@@ -264,7 +272,7 @@
             }  
             modal.style.display = "none";
 
-            window.location.href="index.html?fname=" + $(".contact_fname").val()+"&age="+age;
+            //window.location.href="index.html?fname=" + $(".contact_fname").val()+"&age="+age;
             
         })
 
