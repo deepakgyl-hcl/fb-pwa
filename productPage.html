@@ -234,7 +234,7 @@
             var formdata = $(this).serialize();
             $.ajax({
                 type: "POST",
-                url : "http://4fe0f604.ngrok.io/sendEmail",
+                url : "http://15.206.37.159:8080/sendEmail",
                 data : formdata,
             }).success(function(data){
                 modal.style.display = "none";
@@ -255,7 +255,7 @@
                 var formdata = $(this).serialize();
                 $.ajax({
                     type: "POST",
-                    url: "http://4fe0f604.ngrok.io/sendWhatsapp",
+                    url: "http://15.206.37.159:8080/sendWhatsapp",
                     data: formdata
                 }).success(function(data){
                     modal2.style.display = "none";
